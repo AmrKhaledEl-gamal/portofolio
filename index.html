@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amr Khaled | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="src/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .typed-cursor {
+  font-size: 1em;
+  vertical-align: middle;
+  animation: blink 0.7s infinite;
+}
+
+      .typed-cursor {
+        font-size: 1em;
+        vertical-align: middle;
+        line-height: 1;
+        transform: translateY(-2px);
+        animation: blink 0.7s infinite;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+<!-- Navbar -->
+<header class="fixed w-full top-0 bg-gray-950 shadow z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Amr Khaled</h1>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:text-indigo-400">Home</a>
+        <a href="#about" class="hover:text-indigo-400">About</a>
+        <a href="#projects" class="hover:text-indigo-400">Projects</a>
+        <a href="#contact" class="hover:text-indigo-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 pt-32">
+    <div id="vanta-bg" class="absolute top-0 left-0 w-full h-full -z-10"></div>
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 relative z-10">
+      Hi, I'm <span class="text-indigo-600">A</span>mr <span class="text-indigo-600">K</span>haled
+    </h1>
+    <span id="typed" class="text-lg md:text-xl text-indigo-300 h-10 mb-6 block relative z-10"></span>
+    <a href="#projects" class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-full transition relative z-10">
+      View My Work
+    </a>
+  </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800 px-4">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
+          <!-- Image Container -->
+          <div class="relative group w-52 h-52 flex-shrink-0">
+            <img src="https://i.ibb.co/TDFNhjPx/A93A6876.jpg" alt="Amr Khaled" class="w-full h-full object-cover rounded-2xl border-4 border-indigo-500 transition-transform duration-300 group-hover:scale-105 shadow-lg" />
+            <div class="absolute inset-0 rounded-2xl border-4 border-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+      
+          <!-- Text Content -->
+          <div class="text-center md:text-left">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-indigo-400">About Me</h2>
+            <p class="text-gray-300 text-lg leading-relaxed">
+              I'm a Computer Science student at Damanhour University, deeply interested in Back-End Development.
+              I’ve been working with PHP and MySQL to build real-world projects, and I’m currently learning Laravel and API development.
+              I also have past experience in graphic design and media production, which helped me understand teamwork and creativity.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+    <!-- Projects Section -->
+
+<section id="projects" class="py-20 bg-gray-900 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-indigo-400">Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Project 1: Control Panel -->
+        <div class="bg-gray-800 rounded-2xl shadow-lg p-6 text-left hover:shadow-indigo-500 transition">
+          <h3 class="text-xl font-semibold mb-2">Admin Control Panel</h3>
+          <p class="text-gray-300 mb-4">A notes management system with an admin control panel that allows the admin to add, edit, and delete notes.
+             The system also supports displaying notes for users.
+             Built with PHP and MySQL, the project features a user-friendly interface for efficient content management.</p>
+          <div class="flex gap-4">
+            <a href="https://github.com/AmrKhaledEl-gamal" target="_blank" class="bg-indigo-600 px-4 py-2 rounded text-sm hover:bg-indigo-500">GitHub</a>
+            <a href="#" class="border border-indigo-400 px-4 py-2 rounded text-sm hover:bg-indigo-400 hover:text-black">Live Demo</a>
+          </div>
+        </div>
+  
+        <!-- Project 2: WebSocket Real-time App -->
+        <div class="bg-gray-800 rounded-2xl shadow-lg p-6 text-left hover:shadow-indigo-500 transition">
+          <h3 class="text-xl font-semibold mb-2">Real-Time WebSocket App</h3>
+          <p class="text-gray-300 mb-4">A real-time application using WebSocket for instant communication between clients. Great for chat or live updates.</p>
+          <div class="flex gap-4">
+            <a href="https://github.com/AmrKhaledEl-gamal" target="_blank" class="bg-indigo-600 px-4 py-2 rounded text-sm hover:bg-indigo-500">GitHub</a>
+            <a href="#" class="border border-indigo-400 px-4 py-2 rounded text-sm hover:bg-indigo-400 hover:text-black">Live Demo</a>
+          </div>
+        </div>
+  
+        <!-- Add more projects as needed -->
+      </div>
+    </div>
+  </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800 px-4">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-10 text-indigo-400">Skills</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left text-gray-300 text-lg font-medium">
+          <div>
+            <h3 class="text-indigo-300 mb-2 font-semibold">Programming</h3>
+            <div class="space-y-2">
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">PHP</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">Laravel</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">MySQL</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">C++</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">HTML</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">Bootstrap</div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-indigo-300 mb-2 font-semibold">Creative</h3>
+            <div class="space-y-2">
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">Graphic Design</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">UI/UX (Basic)</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">Video Editing</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">Video Graphy (Basic)</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">Lighting Setup</div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-indigo-300 mb-2 font-semibold">Soft skills</h3>
+            <div class="space-y-2">
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">Communication</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">Teamwork</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">daptability</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">Creativity</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">Critical thinking</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">Problem-solving</div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-indigo-300 mb-2 font-semibold">Business</h3>
+            <div class="space-y-2">
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">Sales</div>
+              <div class="bg-gray-900 p-4 rounded-lg shadow hover:bg-indigo-600 transition">Management</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-indigo-400">Contact Me</h2>
+        <p class="text-gray-300 mb-8">Want to work together or have a question? Feel free to reach out!</p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-10">
+          <a href="mailto:amrkhaledelgammal@gmail.com" class="text-indigo-400 hover:underline text-lg">📧 amrkhaledelgammal@gmail.com</a>
+          <a href="https://www.linkedin.com/in/amr-khaled-ab812617a/" target="_blank" class="text-indigo-400 hover:underline text-lg">💼 LinkedIn</a>
+          <a href="https://github.com/AmrKhaledEl-gamal" target="_blank" class="text-indigo-400 hover:underline text-lg">💻 GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+        var typed = new Typed("#typed", {
+          strings: [
+            "Back-End Developer",
+            "Computer Science Student",
+            "Problem Solver",
+            "Tech Enthusiast"
+          ],
+          typeSpeed: 60,
+          backSpeed: 40,
+          loop: true
+        });
+        
+  
+        VANTA.NET({
+          el: "#vanta-bg",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0x4f46e5,
+          backgroundColor: 0x0f172a,
+          points: 12.0,
+          maxDistance: 25.0,
+          spacing: 18.0
+        });
+      </script>
+  </body>
+</html>
